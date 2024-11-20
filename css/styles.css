@@ -4297,7 +4297,7 @@ td:last-child {
 
 .s-footer__bottom {
     font-size  : calc(var(--text-size) * 0.8);
-    color      : rgba(255, 255, 255, 0.2);
+    color      : white;
     padding-top: var(--vspace-1_25);
     margin-top : var(--vspace-0_75);
     position   : relative;
@@ -4330,7 +4330,7 @@ td:last-child {
 }
 
 .s-footer .link-list a {
-    color : var(--color-gray-15);
+    color : white;
     border: none;
 }
 
