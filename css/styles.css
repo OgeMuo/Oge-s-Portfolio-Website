@@ -85,6 +85,22 @@
     --font-mono: Consolas, "Andale Mono", Courier, "Courier New", monospace;
 }
 
+.book-item {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.book-cover {
+    width: 100px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.book-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    color: var(--color-text-dark);
+}
 /* ------------------------------------------------------------------- 
  * ## colors
  * ------------------------------------------------------------------- */
@@ -94,9 +110,13 @@
    * color-2(#2F352B)
    * color-3(#1A1A1A)
    */
-    --color-1: hsla(12, 75%, 45%, 1);
-    --color-2: hsla(96, 10%, 19%, 1);
-    --color-3: hsla(0, 0%, 10%, 1);
+    
+
+    --color-1: royalblue;
+    --color-3: teal;
+    --color-2: coral;
+    --color-background: #f4f4f8; /* pastel tone */
+    --color-text: #333333;
 
   /* theme color variations
    */
@@ -822,6 +842,36 @@ table {
         width: 100%;
     }
 }
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: center;
+}
+
+.expertise-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.expertise-item.left {
+    flex-direction: row;
+    text-align: left;
+}
+
+.expertise-item.right {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.expertise-icon {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+
 
 /* --------------------------------------------------------------------
  * ## mobile devices (401px to 600px)  
@@ -1190,7 +1240,7 @@ textarea {
  * ## base type styles
  * -------------------------------------------------------------------- */
 body {
-    font-family: var(--font-1);
+    font-family: 'Lato', sans-serif;
     font-size  : var(--base-font-size);
     font-weight: 400;
     line-height: var(--vspace-1);
@@ -1229,8 +1279,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-family           : var(--font-2);
-    font-weight           : 400;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     color                 : var(--color-text-dark);
     font-variant-ligatures: common-ligatures;
     text-rendering        : optimizeLegibility;
@@ -3623,6 +3673,7 @@ td:last-child {
     transition-property: opacity, transform;
     transform          : translateY(150px);
 }
+
 
 .s-intro__btn-download {
     transition-property: opacity, transform;
